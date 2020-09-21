@@ -38,7 +38,7 @@ export class TarefaService {
   remover(id: number): void {
   	let tarefas: Tarefa[] = this.listarTodos();
   	tarefas = tarefas.filter(tarefa => tarefa.id !== id);
-  	localStorage['tarefa'] = JSON.stringify(tarefas);
+  	localStorage['tarefas'] = JSON.stringify(tarefas);
   }
 
   alterarStatus(id: number): void {
